@@ -12,7 +12,7 @@ The objective of this project is to detect helmets in images and videos using th
 python main.py <folder-path-containing-images>
 ```
 
-### Tools Used:
+## Tools Used:
 
 1. Python Programming Language
 2. OpenCV (Open Source Computer Vision Library) - to work with images and videos
@@ -20,7 +20,7 @@ python main.py <folder-path-containing-images>
 4. Supervision (Python Package) - to visualize object detection and annotations
 5. Ultralytics (Python Package) - to use the YOLO model
 
-### Project Workflow:
+## Project Workflow:
 
 1. Load the pre-trained YOLOv8 model for helmet detection.
 2. Read input images or videos and resize the frames to the required size.
@@ -41,7 +41,7 @@ The confusion matrix provides a comprehensive evaluation of the model's performa
 
 ![cm](https://github.com/meryemsakin/helmet-detection/blob/main/cmatrix.png)
 
-### Limitations and Potential Improvements:
+## Limitations and Potential Improvements:
 
 1. The model may not be accurate in all situations, and there may be false positives and false negatives. One way to improve the accuracy is to fine-tune the model on a larger and more diverse dataset.
 2. The current implementation only detects helmets, but it could be extended to detect other safety equipment such as safety glasses or gloves.
@@ -49,7 +49,7 @@ The confusion matrix provides a comprehensive evaluation of the model's performa
     
     
 
-### Conclusion:
+## Conclusion:
 
 In conclusion, your project involved detecting helmets in images and videos using a YOLO model. You used Python, OpenCV, YOLO, Supervision, and Ultralytics to implement the solution. The project workflow involved loading the YOLO model, reading the input images or video frames, passing them through the model, visualizing the detections, checking whether each person is wearing a helmet or not, and storing the results in a CSV file. There are potential improvements that could be made to the project, but overall it provides a good foundation for detecting safety equipment in images and videos.# helmet-detection
 
