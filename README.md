@@ -1,9 +1,12 @@
-## Project Objective:
+## helmet-detection
+
+This project aims to detect helmets in images and videos using the YOLOv8 object detection algorithm. It provides a script that takes a folder path as input, detects helmets in all the images and videos within that folder, and saves annotated images and a CSV file with detection information in an output folder.
 
 <img src="https://github.com/meryemsakin/helmet-detection/blob/main/allresults.jpeg" width="500" height="300">
 
+## Project Objective:
 
-The project involved creating a script for detecting helmets in images and videos using the YOLOv8 object detection algorithm. The script was designed to take a folder path as input and detect helmets in all the images and videos contained within that folder. The script then saved the annotated images and a CSV file containing information about the detections in a separate output folder.
+The objective of this project is to detect helmets in images and videos using the YOLOv8 object detection algorithm. The project workflow involves loading the pre-trained YOLOv8 model, resizing input frames, passing them through the model for object detection, visualizing the detections, and storing the results in annotated images and a CSV file.
 
 ```
 python main.py <folder-path-containing-images>
@@ -19,15 +22,24 @@ python main.py <folder-path-containing-images>
 
 ### Project Workflow:
 
-1. Load the YOLO model that has been trained to detect helmets.
-2. Read the input video or images and resize the frames to the required size.
-3. Pass the resized frames through the YOLO model to get the detected objects and their positions.
-4. Use the Supervision package to visualize the detections on the image.
-5. Store the resulting images with the annotations in a folder.
-6. Extract the labels of the detections from the YOLO results.
-7. Check whether each person in the image is wearing a helmet or not, and store the results in a CSV file.
-8. Store the CSV file in a folder along with the images.
+1. Load the pre-trained YOLOv8 model for helmet detection.
+2. Read input images or videos and resize the frames to the required size.
+3. Pass the resized frames through the YOLOv8 model to obtain the detected objects and their positions.
+4. Use the Supervision package to visualize the detections on the images.
+5. Store the resulting annotated images in a separate folder.
+6. Extract the labels of the detections from the YOLOv8 results.
+7. Evaluate the detections and generate a confusion matrix.
+8. Calculate accuracy and loss metrics and plot them using graphs.
+9. Store the generated graphs, along with the CSV file containing detection information, in the output folder.
 
+## Metrics
+
+![Accuracy](https://github.com/meryemsakin/helmet-detection/blob/main/graph.png)
+
+## Confusion Matrix
+The confusion matrix provides a comprehensive evaluation of the model's performance. Here is the confusion matrix for the helmet detection model:
+
+![cm](https://github.com/meryemsakin/helmet-detection/blob/main/cmatrix.png)
 
 ### Limitations and Potential Improvements:
 
