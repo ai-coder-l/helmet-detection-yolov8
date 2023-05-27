@@ -1,8 +1,8 @@
-## helmet-detection
+## Helmet-Detection
 
 This project aims to detect helmets in images and videos using the YOLOv8 object detection algorithm. It provides a script that takes a folder path as input, detects helmets in all the images and videos within that folder, and saves annotated images and a CSV file with detection information in an output folder.
 
-<img src="https://github.com/meryemsakin/helmet-detection/blob/main/allresults.jpeg" width="500" height="300">
+<img src="https://github.com/meryemsakin/helmet-detection/blob/main/allresults.jpeg" width="900" height="500">
 
 ## Project Objective:
 
